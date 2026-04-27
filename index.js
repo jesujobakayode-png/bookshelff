@@ -25,9 +25,9 @@ app.use((req, res, next) => {
 });
 
 let books = [
-    {"title": "The Great Gatsby","author": "F. Scott Fitzgerald","isRead": true,"publishedYear": 1925},
-    {"title": "Atomic Habits","author": "James Clear","isRead": false,"publishedYear": 2018},
-    {"title": "Things Fall Apart","author": "Chinua Achebe","isRead": true,"publishedYear": 1958}
+    {"id": 1, "title": "The Great Gatsby","author": "F. Scott Fitzgerald","isRead": true,"publishedYear": 1925},
+    {"id": 2, "title": "Atomic Habits","author": "James Clear","isRead": false,"publishedYear": 2018},
+    {"id": 3, "title": "Things Fall Apart","author": "Chinua Achebe","isRead": true,"publishedYear": 1958}
 ];
 let id = 4;
 

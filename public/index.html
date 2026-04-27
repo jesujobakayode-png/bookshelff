@@ -2,58 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login & Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body class="auth-page">
+<main class="auth-shell">
+  <section class="auth-card">
+    <p class="eyebrow">Digital Bookshelf</p>
 
-<body style="font-family: Arial; background: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+    <div id="loginForm" class="form-panel">
+      <h1 class="auth-title">Welcome back</h1>
+      <p class="auth-subtitle">Track what you read, add new titles, and keep your shelf organized in one place.</p>
 
-<div style="background: white; padding: 25px; border-radius: 10px; width: 320px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+      <div class="form-field">
+        <label for="loginEmail">Email</label>
+        <input id="loginEmail" class="input" type="email" placeholder="you@example.com">
+      </div>
 
-  <!-- LOGIN -->
-  <div id="loginForm">
-    <h2 style="text-align:center;">Login</h2>
+      <div class="form-field">
+        <label for="loginPassword">Password</label>
+        <input id="loginPassword" class="input" type="password" placeholder="Enter your password">
+      </div>
 
-    <input type="email" placeholder="Email"
-      style="width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:5px;">
+      <button class="button button-primary button-full" type="button">Login</button>
 
-    <input type="password" placeholder="Password"
-      style="width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:5px;">
+      <p class="form-footer">
+        <a href="#" id="showSignup">Don't have an account? Sign Up</a>
+      </p>
 
-    <button style="width:100%; padding:10px; background:#007bff; color:white; border:none; border-radius:5px;">
-      Login
-    </button>
+      <a class="ghost-link" href="books.html">Open Bookshelf</a>
+    </div>
 
-    <p style="text-align:center; margin-top:10px;">
-      <a href="#" id="showSignup" style="color:#007bff;">Don't have an account? Sign Up</a>
-    </p>
-  </div>
+    <div id="signupForm" class="form-panel" hidden>
+      <h1 class="auth-title">Create account</h1>
+      <p class="auth-subtitle">Start building your personal reading archive with a clean, simple setup.</p>
 
-  <!-- SIGN UP -->
-  <div id="signupForm" style="display:none;">
-    <h2 style="text-align:center;">Sign Up</h2>
+      <div class="form-field">
+        <label for="fullName">Full Name</label>
+        <input id="fullName" class="input" type="text" placeholder="Your full name">
+      </div>
 
-    <input type="text" placeholder="Full Name"
-      style="width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:5px;">
+      <div class="form-field">
+        <label for="signupEmail">Email</label>
+        <input id="signupEmail" class="input" type="email" placeholder="you@example.com">
+      </div>
 
-    <input type="email" placeholder="Email"
-      style="width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:5px;">
+      <div class="form-field">
+        <label for="signupPassword">Password</label>
+        <input id="signupPassword" class="input" type="password" placeholder="Choose a password">
+      </div>
 
-    <input type="password" placeholder="Password"
-      style="width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:5px;">
+      <button class="button button-secondary button-full" type="button">Sign Up</button>
 
-    <button style="width:100%; padding:10px; background:green; color:white; border:none; border-radius:5px;">
-      Sign Up
-    </button>
+      <p class="form-footer">
+        <a href="#" id="showLogin">Already have an account? Login</a>
+      </p>
+    </div>
+  </section>
+</main>
 
-    <p style="text-align:center; margin-top:10px;">
-      <a href="#" id="showLogin" style="color:#007bff;">Already have an account? Login</a>
-    </p>
-  </div>
-
-</div>
-
-<!-- LINK EXTERNAL JS -->
 <script src="script.js"></script>
-
 </body>
 </html>

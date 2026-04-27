@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Bookshelf</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="books-page">
+<main class="books-shell">
+  <section class="books-hero">
+    <div>
+      <p class="eyebrow">My Library</p>
+      <h1 class="books-title">Digital Bookshelf</h1>
+      <p class="books-subtitle">Add titles, mark progress, and keep your reading list neatly arranged.</p>
+    </div>
+    <a class="ghost-link" href="index.html">Back to Login</a>
+  </section>
+
+  <section class="books-grid">
+    <div class="books-panel">
+      <h2 class="section-title">Create Book</h2>
+      <p class="panel-subtitle">Add a fresh title to your collection.</p>
+
+      <div class="form-field">
+        <label for="title">Title</label>
+        <input id="title" class="input" placeholder="Book title">
+      </div>
+
+      <div class="form-field">
+        <label for="author">Author</label>
+        <input id="author" class="input" placeholder="Author name">
+      </div>
+
+      <div class="form-field">
+        <label for="year">Published Year</label>
+        <input id="year" class="input" type="number" placeholder="e.g. 2023">
+      </div>
+
+      <label class="checkbox-row">
+        <input type="checkbox" id="isRead">
+        <span>Mark as read</span>
+      </label>
+
+      <button id="addBookButton" class="button button-primary button-full" type="button">Add Book</button>
+    </div>
+
+    <div class="books-panel">
+      <h2 class="section-title">All Books</h2>
+      <p class="panel-subtitle">Your saved titles will appear here instantly.</p>
+      <div id="bookList" class="book-list"></div>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
