@@ -15,6 +15,9 @@ app.use(helmet());
 // Enable CORS
 app.use(cors());
 
+// Serve static files from the "public" directory
+app.use(express.static('public'));
+
 // Logging middleware
 app.use((req, res, next) => {
   console.log(`${req.method} ${req.url}`);
